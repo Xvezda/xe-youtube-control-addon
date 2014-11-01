@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+	<title xml:lang="ko">Youtube 컨트롤 애드온</title>
+	<title xml:lang="jp">Youtube コントロール アドオン</title>
+	<title xml:lang="en">Youtube control addon</title>
+    <description xml:lang="ko">
+        게시글에 삽입한 Youtube 비디오 플레이어의 옵션을 일괄적으로 조절할 수 있도록 합니다.
+    </description>
+    <description xml:lang="jp">
+        投稿に挿入したYoutubeのビデオオプションを一括して調整することができます。
+    </description>
+    <description xml:lang="en">
+        You can adjust video options of Youtube which was inserted into the posts.
+    </description>
+	<version>1.0</version>
+	<date>2014-10-22</date>
+
+	<author email_address="xvezda@naver.com" link="http://xvezda.blog.me">
+		<name xml:lang="ko">즈베즈다</name>
+		<name xml:lang="jp">ズベズダ</name>
+		<name xml:lang="en">Xvezda</name>
+	</author>
+    
+    <extra_vars>
+        <var name="resize" type="select">
+            <title xml:lang="ko">리사이즈 설정</title>
+            <title xml:lang="jp">リサイズ設定</title>
+            <title xml:lang="en">Resize setting</title>
+            <description xml:lang="ko">Youtube 비디오의 자동 크기조절을 설정합니다.</description>
+            <description xml:lang="jp">Youtubeビデオの自動サイズ変更を設定します。</description>
+            <description xml:lang="en">Set the automatic resizing of the Youtube video.</description>
+            <options value="">
+                <title xml:lang="ko">사용하지 않음</title>
+                <title xml:lang="jp">使用しない</title>
+                <title xml:lang="en">Disable</title>
+            </options>
+            <options value="always">
+                <title xml:lang="ko">항상 사용</title>
+                <title xml:lang="jp">何時も使う</title>
+                <title xml:lang="en">Use always</title>
+            </options>
+        </var>
+        <var name="wmode" type="select">
+            <title xml:lang="ko">Wmode 설정</title>
+            <title xml:lang="jp">Wmode設定</title>
+            <title xml:lang="en">Wmode setting</title>
+            <description xml:lang="ko">Youtube 비디오의 Wmode를 설정합니다.</description>
+            <description xml:lang="jp">YoutubeビデオのWmodeを設定します。</description>
+            <description xml:lang="en">Set the Wmode of the Youtube video.</description>
+            <options value="">
+                <title xml:lang="ko">사용하지 않음</title>
+                <title xml:lang="jp">使用しない</title>
+                <title xml:lang="en">Default</title>
+            </options>
+            <options value="opaque">
+                <title xml:lang="ko">opaque</title>
+                <title xml:lang="jp">opaque</title>
+                <title xml:lang="en">opaque</title>
+            </options>
+            <options value="transparent">
+                <title xml:lang="ko">transparent</title>
+                <title xml:lang="jp">transparent</title>
+                <title xml:lang="en">transparent</title>
+            </options>
+        </var>
+        <var name="autohide" type="select">
+            <title xml:lang="ko">자동 숨기기 설정</title>
+            <title xml:lang="jp">autohide設定</title>
+            <title xml:lang="en">autohide Setting</title>
+            <description xml:lang="ko">Youtube 비디오의 자동 숨기기를 설정합니다.</description>
+            <description xml:lang="jp">Youtubeビデオのautohideパラメーターを設定します。</description>
+            <description xml:lang="en">Set the autodhide parameter of the Youtube video.</description>
+            <options value="">
+                <title xml:lang="ko">기본값 사용 (* 진행률 숨김)</title>
+                <title xml:lang="jp">デフォルト値を使用</title>
+                <title xml:lang="en">Default</title>
+            </options>
+            <options value="1">
+                <title xml:lang="ko">컨트롤 숨김</title>
+                <title xml:lang="jp">コントローラを非表示に</title>
+                <title xml:lang="en">Hide control</title>
+            </options>
+            <options value="0">
+                <title xml:lang="ko">숨김</title>
+                <title xml:lang="jp">隠す</title>
+                <title xml:lang="en">Hide</title>
+            </options>
+        </var>
+        <var name="autoplay" type="select">
+            <title xml:lang="ko">자동재생 설정</title>
+            <title xml:lang="jp">autoplay設定</title>
+            <title xml:lang="en">autoplay Setting</title>
+            <description xml:lang="ko">비디오의 자동재생을 설정합니다.</description>
+            <description xml:lang="jp">Youtubeビデオのautoplayパラメーターを設定します。</description>
+            <description xml:lang="en">Set the autoplay parameter of the Youtube video.</description>
+            <options value="">
+                <title xml:lang="ko">기본값 사용</title>
+                <title xml:lang="jp">デフォルト値を使用</title>
+                <title xml:lang="en">Default</title>
+            </options>
+            <options value="1">
+                <title xml:lang="ko">자동 재생</title>
+                <title xml:lang="jp">自動再生</title>
+                <title xml:lang="en">Autoplay</title>
+            </options>
+        </var>
+        <var name="cc_load_policy" type="select">
+            <title xml:lang="ko">자막표시 설정</title>
+            <title xml:lang="jp">字幕表示設定</title>
+            <title xml:lang="en">Subtitle(CC) Setting</title>
+            <description xml:lang="ko">자막표시를 설정합니다. 기본값 사용시 사용자 환경설정을 따릅니다.</description>
+            <description xml:lang="jp">字幕表示を設定します。デフォルト使用時のユーザー環境設定を実行します。</description>
+            <description xml:lang="en">Set the display of subtitles. It follows the user settings when value is default.</description>
+            <options value="">
+                <title xml:lang="ko">기본값 사용</title>
+                <title xml:lang="jp">デフォルト値を使用</title>
+                <title xml:lang="en">Default</title>
+            </options>
+            <options value="1">
+                <title xml:lang="ko">자막 기본표시</title>
+                <title xml:lang="jp">字幕のデフォルト表示</title>
+                <title xml:lang="en">Autoplay</title>
+            </options>
+        </var>
+        <var name="controls" type="select">
+            <title xml:lang="ko">동영상 컨트롤 설정</title>
+            <title xml:lang="jp">動画コントロールの設定</title>
+            <title xml:lang="en">Video control setting</title>
+            <description xml:lang="ko">동영상 컨트롤 표시를 설정합니다.</description>
+            <description xml:lang="jp">動画コントロールの表示を設定します。</description>
+            <description xml:lang="en">Set the display of video control.</description>
+            <options value="">
+                <title xml:lang="ko">기본값 사용</title>
+                <title xml:lang="jp">デフォルト値を使用</title>
+                <title xml:lang="en">Default</title>
+            </options>
+            <options value="0">
+                <title xml:lang="ko">표시 안함</title>
+                <title xml:lang="jp">非表示</title>
+                <title xml:lang="en">Autoplay</title>
+            </options>
+            <options value="2">
+                <title xml:lang="ko">재생시 표시</title>
+                <title xml:lang="jp">再生時に表示</title>
+                <title xml:lang="en">Autoplay</title>
+            </options>
+        </var>
+        <var name="disablekb" type="select">
+            <title xml:lang="ko">키보드 컨트롤 설정</title>
+            <title xml:lang="jp">キーボードコントロールの設定</title>
+            <title xml:lang="en">Keyboard control setting</title>
+            <description xml:lang="ko">플레이어의 키보드 컨트롤 사용을 설정합니다.</description>
+            <description xml:lang="jp">プレイヤーのキーボードコントロールを有効にします。</description>
+            <description xml:lang="en">Set the player's keyboard control.</description>
+            <options value="">
+                <title xml:lang="ko">기본값 사용</title>
+                <title xml:lang="jp">デフォルト値を使用</title>
+                <title xml:lang="en">Default</title>
+            </options>
+            <options value="1">
+                <title xml:lang="ko">키보드 사용중지</title>
+                <title xml:lang="jp">キーボードの使用停止</title>
+                <title xml:lang="en">Autoplay</title>
+            </options>
+        </var>
+        <var name="modestbranding" type="select">
+            <title xml:lang="ko">로고 숨기기 설정</title>
+            <title xml:lang="jp">ロゴを非表示に設定定</title>
+            <title xml:lang="en">Hide logo</title>
+            <description xml:lang="ko">Youtube 로고 표시를 설정합니다.</description>
+            <description xml:lang="jp">Youtubeのロゴ表示を設定します。</description>
+            <description xml:lang="en">Set the display option of youtube logo.</description>
+            <options value="">
+                <title xml:lang="ko">기본값 사용</title>
+                <title xml:lang="jp">デフォルト値を使用</title>
+                <title xml:lang="en">Default</title>
+            </options>
+            <options value="1">
+                <title xml:lang="ko">로고 숨기기</title>
+                <title xml:lang="jp">ロゴを隠す</title>
+                <title xml:lang="en">Hide logo</title>
+            </options>
+        </var>
+        <var name="rel" type="select">
+            <title xml:lang="ko">관련 동영상 표시 설정</title>
+            <title xml:lang="jp">関連動画の表示設定</title>
+            <title xml:lang="en">Display related videos</title>
+            <description xml:lang="ko">동영상 재생 종료 이후 관련 동영상 표시를 설정합니다.</description>
+            <description xml:lang="jp">動画再生終了後に関連動画の表示を設定します。</description>
+            <description xml:lang="en">Set the display of related videos after playing video.</description>
+            <options value="">
+                <title xml:lang="ko">기본값 사용</title>
+                <title xml:lang="jp">デフォルト値を使用</title>
+                <title xml:lang="en">Default</title>
+            </options>
+            <options value="0">
+                <title xml:lang="ko">표시 안함</title>
+                <title xml:lang="jp">非表示</title>
+                <title xml:lang="en">Do not display</title>
+            </options>
+        </var>
+        <var name="showinfo" type="select">
+            <title xml:lang="ko">동영상 정보 표시 설정</title>
+            <title xml:lang="jp">動画情報を表示する設定</title>
+            <title xml:lang="en">Subtitle(CC) Setting</title>
+            <description xml:lang="ko">동영상 재생 시작전 제목 및 업로더 정보 표시를 설정합니다.</description>
+            <description xml:lang="jp">動画の再生開始前のタイトルとアップローダの情報表示を設定します。</description>
+            <description xml:lang="en">Set the display of info before playing video.</description>
+            <options value="">
+                <title xml:lang="ko">기본값 사용</title>
+                <title xml:lang="jp">デフォルト値を使用</title>
+                <title xml:lang="en">Default</title>
+            </options>
+            <options value="0">
+                <title xml:lang="ko">표시 안함</title>
+                <title xml:lang="jp">非表示</title>
+                <title xml:lang="en">Do not display</title>
+            </options>
+        </var>
+        <var name="theme" type="select">
+            <title xml:lang="ko">플레이어 테마 설정</title>
+            <title xml:lang="jp">プレイヤーのテーマ設定</title>
+            <title xml:lang="en">Player theme setting</title>
+            <description xml:lang="ko">Youtube 비디오 플레이어의 테마를 설정합니다.</description>
+            <description xml:lang="jp">Youtubeビデオプレーヤーのテーマを設定します。</description>
+            <description xml:lang="en">Set the Youtube video player's theme</description>
+            <options value="">
+                <title xml:lang="ko">기본값 사용 (* 어두운 테마)</title>
+                <title xml:lang="jp">デフォルト値を使用</title>
+                <title xml:lang="en">Default</title>
+            </options>
+            <options value="light">
+                <title xml:lang="ko">밝은 테마</title>
+                <title xml:lang="jp">明るいテーマ</title>
+                <title xml:lang="en">Light theme</title>
+            </options>
+        </var>
+    </extra_vars>
+</addon>
