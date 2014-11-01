@@ -18,12 +18,12 @@
 			});
 		});
 	}
-	if(!$.isEmptyObject(youtube_query)) {
+	if(!$.isEmptyObject(youtube_option)) {
     	$('div.xe_content').each(function() {
 			$('iframe[src*="//www.youtube"]').each(function() {
 				var youtube_src = $(this).attr('src');
-				for(var q in youtube_query) {
-					youtube_src += (youtube_src.indexOf('?') == '-1') ? '?'+q+'='+youtube_query[q] : '&'+q+'='+youtube_query[q];
+				for(var q in youtube_option) {
+					youtube_src += (youtube_src.indexOf('?') == '-1') ? '?'+q+'='+youtube_option[q] : '&'+q+'='+youtube_option[q];
 				}
 				$(this).attr('src', youtube_src);
 			});

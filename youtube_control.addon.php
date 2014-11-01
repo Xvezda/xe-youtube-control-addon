@@ -17,7 +17,7 @@ if($called_position == 'before_display_content' && Context::get('module') != 'ad
 <script>
 //<![CDATA[
 var youtube_resize = %s;
-var youtube_query = {
+var youtube_option = {
 %s
 };
 //]]>
