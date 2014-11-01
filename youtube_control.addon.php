@@ -33,7 +33,7 @@ EOD;
 	{
 		if(in_array($key, $func_arr) || $val == '') continue;
         
-		array_push($temp_arr, '    "'.$key.'" : "'.$val.'"'); // Push
+		array_push($temp_arr, '	"'.$key.'" : "'.$val.'"'); // Push
 	}
 	$params = implode($temp_arr, ','.PHP_EOL); // Array to String
 
