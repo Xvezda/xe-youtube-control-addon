@@ -44,7 +44,7 @@
             <title xml:lang="ko">강제 리사이즈 설정</title>
             <title xml:lang="jp">強制リサイズ設定</title>
             <title xml:lang="en">Forced resize setting</title>
-            <description xml:lang="ko">입력 예) 960 / 비디오의 넓이를 입력된 수치로 맞춥니다. 높이값은 비율에 맞게 자동조정됩니다. Blank for </description>
+            <description xml:lang="ko">입력 예) 960 / 비디오의 넓이를 입력된 수치로 맞춥니다. 높이값은 비율에 맞게 자동조정됩니다.</description>
             <description xml:lang="jp">入力例）960/ビデオの幅を入力した数値に合わせます。高さの値は、比率に合わせて自動調整されます。空の値にしておくと適用されません。</description>
             <description xml:lang="en">input Ex) 960 / Change video's width from input value. Height will be adjusted from the ratio. Left blank to disable.</description>
         </var>
