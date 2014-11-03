@@ -3,7 +3,7 @@
  * @author Xvezda (xvezda@naver.com)
  */
 (function($) {
-	if(youtube_resize) {
+	if(typeof youtube_resize !== 'undefined') {
 		$('div.xe_content').each(function() {
 			var article_width = $(this).innerWidth();
 				$('iframe[src*="//www.youtube"]', this).each(function() {
@@ -18,7 +18,7 @@
 			});
 		});
 	}
-	if(!$.isEmptyObject(youtube_option)) {
+	if(typeof youtube_option !== 'undefined' && !$.isEmptyObject(youtube_option)) {
     	$('div.xe_content').each(function() {
 			$('iframe[src*="//www.youtube"]').each(function() {
 				var youtube_src = $(this).attr('src');
