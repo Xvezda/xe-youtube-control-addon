@@ -24,7 +24,7 @@ var youtube_option = {
 </script>
 EOD;
 
-    $resize = ($addon_info->resize_force != '' && preg_match("/^\d+$/", $addon_info->resize_force)) ? $addon_info->resize_force : (($addon_info->resize != '') ? 'auto' : 'off');
+    $resize = ($addon_info->resize_force != '' && preg_match("/\d+$/", $addon_info->resize_force)) ? $addon_info->resize_force : (($addon_info->resize != '') ? 'auto' : 'off');
 
 	$temp_arr = array(); // temp array
 	$func_arr = array('xe_validator_id', 'xe_run_method', 'resize', 'resize_force');
@@ -36,12 +36,9 @@ EOD;
 		array_push($temp_arr, '	"'.$key.'" : "'.$val.'"'); // Push
 	}
 	$params = implode($temp_arr, ','.PHP_EOL); // Array to String
-
-	$tags = sprintf($tags, $resize
-					, $params);
+	$tags = sprintf($tags, $resize, $params);
 
 	Context::addHtmlFooter($tags);
-
 	Context::loadFile(array('./addons/youtube_control/js/youtube_control.min.js', 'body', '', null), true);
 }
 
