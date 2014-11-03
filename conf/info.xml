@@ -163,6 +163,24 @@
 				<title xml:lang="en">Autoplay</title>
 			</options>
 		</var>
+        <var name="loop" type="select">
+            <title xml:lang="ko">반복재생 설정</title>
+            <title xml:lang="jp">loop設定</title>
+            <title xml:lang="en">Loop Setting</title>
+            <description xml:lang="ko">비디오의 반복재생을 설정합니다.</description>
+            <description xml:lang="jp">ビデオの繰り返し再生を設定します。</description>
+            <description xml:lang="en">Set the loop parameter of the video.</description>
+            <options value="">
+                <title xml:lang="ko">기본값 사용</title>
+                <title xml:lang="jp">デフォルト値を使用</title>
+                <title xml:lang="en">Default</title>
+            </options>
+            <options value="1">
+                <title xml:lang="ko">반복 재생</title>
+                <title xml:lang="jp">リピート再生</title>
+                <title xml:lang="en">Autoplay</title>
+            </options>
+        </var>
 		<var name="modestbranding" type="select">
 			<title xml:lang="ko">로고 숨기기 설정</title>
 			<title xml:lang="jp">ロゴを非表示に設定定</title>
