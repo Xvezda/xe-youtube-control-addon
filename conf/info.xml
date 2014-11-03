@@ -26,9 +26,9 @@
 			<title xml:lang="ko">리사이즈 설정</title>
 			<title xml:lang="jp">リサイズ設定</title>
 			<title xml:lang="en">Resize setting</title>
-			<description xml:lang="ko">Youtube 비디오의 자동 크기조절을 설정합니다.</description>
-			<description xml:lang="jp">Youtubeビデオの自動サイズ変更を設定します。</description>
-			<description xml:lang="en">Set the automatic resizing of the Youtube video.</description>
+			<description xml:lang="ko">비디오의 자동 크기조절을 설정합니다.</description>
+			<description xml:lang="jp">ビデオの自動サイズ変更を設定します。</description>
+			<description xml:lang="en">Set the automatic resizing of the video.</description>
 			<options value="">
 				<title xml:lang="ko">사용하지 않음</title>
 				<title xml:lang="jp">使用しない</title>
@@ -44,9 +44,9 @@
 			<title xml:lang="ko">Wmode 설정</title>
 			<title xml:lang="jp">Wmode設定</title>
 			<title xml:lang="en">Wmode setting</title>
-			<description xml:lang="ko">Youtube 비디오의 Wmode를 설정합니다.</description>
-			<description xml:lang="jp">YoutubeビデオのWmodeを設定します。</description>
-			<description xml:lang="en">Set the Wmode of the Youtube video.</description>
+			<description xml:lang="ko">비디오의 Wmode를 설정합니다.</description>
+			<description xml:lang="jp">ビデオのWmodeを設定します。</description>
+			<description xml:lang="en">Set the Wmode of the video.</description>
 			<options value="">
 				<title xml:lang="ko">사용하지 않음</title>
 				<title xml:lang="jp">使用しない</title>
@@ -67,9 +67,9 @@
 			<title xml:lang="ko">자동 숨기기 설정</title>
 			<title xml:lang="jp">autohide設定</title>
 			<title xml:lang="en">autohide Setting</title>
-			<description xml:lang="ko">Youtube 비디오의 자동 숨기기를 설정합니다.</description>
-			<description xml:lang="jp">Youtubeビデオのautohideパラメーターを設定します。</description>
-			<description xml:lang="en">Set the autodhide parameter of the Youtube video.</description>
+			<description xml:lang="ko">비디오의 자동 숨기기를 설정합니다.</description>
+			<description xml:lang="jp">ビデオのautohideパラメーターを設定します。</description>
+			<description xml:lang="en">Set the autodhide parameter of the video.</description>
 			<options value="">
 				<title xml:lang="ko">기본값 사용 (* 진행률 숨김)</title>
 				<title xml:lang="jp">デフォルト値を使用</title>
@@ -91,8 +91,8 @@
 			<title xml:lang="jp">autoplay設定</title>
 			<title xml:lang="en">autoplay Setting</title>
 			<description xml:lang="ko">비디오의 자동재생을 설정합니다.</description>
-			<description xml:lang="jp">Youtubeビデオのautoplayパラメーターを設定します。</description>
-			<description xml:lang="en">Set the autoplay parameter of the Youtube video.</description>
+			<description xml:lang="jp">ビデオのautoplayパラメーターを設定します。</description>
+			<description xml:lang="en">Set the autoplay parameter of the video.</description>
 			<options value="">
 				<title xml:lang="ko">기본값 사용</title>
 				<title xml:lang="jp">デフォルト値を使用</title>
@@ -123,11 +123,11 @@
 			</options>
 		</var>
 		<var name="controls" type="select">
-			<title xml:lang="ko">동영상 컨트롤 설정</title>
-			<title xml:lang="jp">動画コントロールの設定</title>
-			<title xml:lang="en">Video control setting</title>
-			<description xml:lang="ko">동영상 컨트롤 표시를 설정합니다.</description>
-			<description xml:lang="jp">動画コントロールの表示を設定します。</description>
+			<title xml:lang="ko">컨트롤 설정</title>
+			<title xml:lang="jp">コントロールの設定</title>
+			<title xml:lang="en">Control setting</title>
+			<description xml:lang="ko">비디오 컨트롤 표시를 설정합니다.</description>
+			<description xml:lang="jp">ビデオコントロールの表示を設定します。</description>
 			<description xml:lang="en">Set the display of video control.</description>
 			<options value="">
 				<title xml:lang="ko">기본값 사용</title>
