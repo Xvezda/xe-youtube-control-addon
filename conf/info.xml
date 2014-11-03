@@ -23,7 +23,7 @@
 	
 	<extra_vars>
 		<var name="resize" type="select">
-			<title xml:lang="ko">리사이즈 설정</title>
+			<title xml:lang="ko">자동 리사이즈 설정</title>
 			<title xml:lang="jp">リサイズ設定</title>
 			<title xml:lang="en">Resize setting</title>
 			<description xml:lang="ko">비디오의 자동 크기조절을 설정합니다.</description>
@@ -40,6 +40,24 @@
 				<title xml:lang="en">Use always</title>
 			</options>
 		</var>
+        <var name="resize_force">
+            <title xml:lang="ko">강제 리사이즈 설정</title>
+            <title xml:lang="jp">リサイズ設定</title>
+            <title xml:lang="en">Resize setting</title>
+            <description xml:lang="ko">입력 예) 960 / 비디오의 넓이를 입력된 수치로 맞춥니다. 높이값은 비율에 맞게 자동조정됩니다. 빈 값으로 두면 적용되지 않습니다.</description>
+            <description xml:lang="jp">ビデオの自動サイズ変更を設定します。</description>
+            <description xml:lang="en">Set the automatic resizing of the video.</description>
+            <options value="">
+                <title xml:lang="ko">사용하지 않음</title>
+                <title xml:lang="jp">使用しない</title>
+                <title xml:lang="en">Disable</title>
+            </options>
+            <options value="always">
+                <title xml:lang="ko">항상 사용</title>
+                <title xml:lang="jp">何時も使う</title>
+                <title xml:lang="en">Use always</title>
+            </options>
+        </var>
 		<var name="wmode" type="select">
 			<title xml:lang="ko">Wmode 설정</title>
 			<title xml:lang="jp">Wmode設定</title>

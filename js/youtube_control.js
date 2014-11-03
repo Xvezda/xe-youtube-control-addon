@@ -3,16 +3,16 @@
  * @author Xvezda (xvezda@naver.com)
  */
 (function($) {
-	if(typeof youtube_resize !== 'undefined' && youtube_resize == true) {
+	if(typeof youtube_resize !== 'undefined' && youtube_resize != 'off') {
 		$('div.xe_content').each(function() {
-			var article_width = $(this).innerWidth();
+            var resize_width = (!isNaN(youtube_resize)) ? Number(youtube_resize) : $(this).innerWidth();
 				$('iframe[src*="//www.youtube"]', this).each(function() {
 				var ytb_width = $(this).width();
 				var ytb_height = $(this).height();
-				if(ytb_width <= article_width) return;
-				var ytb_newh = parseInt(article_width / ytb_width * ytb_height);
+				if(youtube_resize == 'auto' && ytb_width <= resize_width) return;
+				var ytb_newh = parseInt(resize_width / ytb_width * ytb_height);
 				$(this).attr({
-					'width' : article_width,
+					'width' : resize_width,
 					'height' : ytb_newh
 				});
 			});

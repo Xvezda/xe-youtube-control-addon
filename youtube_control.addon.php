@@ -16,7 +16,7 @@ if($called_position == 'before_display_content' && Context::get('module') != 'ad
 	$tags = <<<EOD
 <script>
 //<![CDATA[
-var youtube_resize = %s;
+var youtube_resize = '%s';
 var youtube_option = {
 %s
 };
@@ -24,10 +24,10 @@ var youtube_option = {
 </script>
 EOD;
 
-	$resize = ($addon_info->resize != '') ? 'true' : 'false';
+    $resize = ($addon_info->resize_force != '' && preg_match("/^\d+$/", $addon_info->resize_force)) ? $addon_info->resize_force : (($addon_info->resize != '') ? 'auto' : 'off');
 
 	$temp_arr = array(); // temp array
-	$func_arr = array('xe_validator_id', 'xe_run_method', 'resize');
+	$func_arr = array('xe_validator_id', 'xe_run_method', 'resize', 'resize_force');
 
 	foreach($addon_info as $key => $val)
 	{
