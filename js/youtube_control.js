@@ -3,7 +3,7 @@
  * @author Xvezda (xvezda@naver.com)
  */
 (function($) {
-	if(typeof youtube_resize !== 'undefined') {
+	if(typeof youtube_resize !== 'undefined' && youtube_resize == true) {
 		$('div.xe_content').each(function() {
 			var article_width = $(this).innerWidth();
 				$('iframe[src*="//www.youtube"]', this).each(function() {
