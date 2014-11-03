@@ -16,7 +16,7 @@ if($called_position == 'before_display_content' && Context::get('module') != 'ad
 	$tags = <<<EOD
 <script>
 //<![CDATA[
-var youtube_resize = '%s';
+var youtube_resize = "%s";
 var youtube_option = {
 %s
 };
