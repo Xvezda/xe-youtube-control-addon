@@ -5,8 +5,8 @@
 (function($) {
 	if(typeof youtube_resize !== 'undefined' && youtube_resize != 'off') {
 		$('div.xe_content').each(function() {
-            var resize_width = (!isNaN(youtube_resize)) ? Number(youtube_resize) : $(this).innerWidth();
-				$('iframe[src*="//www.youtube"]', this).each(function() {
+			var resize_width = (!isNaN(youtube_resize)) ? Number(youtube_resize) : $(this).innerWidth();
+			$('iframe[src*="//www.youtube"]', this).each(function() {
 				var ytb_width = $(this).width();
 				var ytb_height = $(this).height();
 				if(youtube_resize == 'auto' && ytb_width <= resize_width) return;
