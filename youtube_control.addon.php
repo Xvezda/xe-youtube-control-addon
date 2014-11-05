@@ -24,7 +24,7 @@ var youtube_option = {
 </script>
 EOD;
 
-    $resize = ($addon_info->resize_force != '' && preg_match("/^\d+$/", $addon_info->resize_force)) ? $addon_info->resize_force : (($addon_info->resize != '') ? $addon_info->resize : 'off');
+	$resize = ($addon_info->resize_force != '' && preg_match("/^\d+$/", $addon_info->resize_force)) ? $addon_info->resize_force : (($addon_info->resize != '') ? $addon_info->resize : 'off');
 
 	$temp_arr = array(); // temp array
 	$func_arr = array('xe_validator_id', 'xe_run_method', 'mid_list', 'resize', 'resize_force');
