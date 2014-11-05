@@ -176,6 +176,24 @@
 				<title xml:lang="en">Autoplay</title>
 			</options>
 		</var>
+		<var name="fs" type="select">
+			<title xml:lang="ko">전체화면 설정</title>
+			<title xml:lang="jp">全画面表示の設定</title>
+			<title xml:lang="en">Fullscreen Setting</title>
+			<description xml:lang="ko">플레이어의 전체화면 버튼 표시를 설정할 수 있습니다.</description>
+			<description xml:lang="jp">プレイヤーのフルスクリーンボタンの表示を設定することができます。</description>
+			<description xml:lang="en">Set the player's keyboard control.</description>
+			<options value="">
+				<title xml:lang="ko">기본값 사용</title>
+				<title xml:lang="jp">デフォルト値を使用</title>
+				<title xml:lang="en">Default</title>
+			</options>
+			<options value="0">
+				<title xml:lang="ko">표시 안함</title>
+				<title xml:lang="jp">表示しない</title>
+				<title xml:lang="en">Disable</title>
+			</options>
+		</var>
 		<var name="loop" type="select">
 			<title xml:lang="ko">반복재생 설정</title>
 			<title xml:lang="jp">loop設定</title>
