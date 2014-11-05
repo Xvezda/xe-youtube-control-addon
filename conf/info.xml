@@ -194,6 +194,24 @@
 				<title xml:lang="en">Disable</title>
 			</options>
 		</var>
+		<var name="iv_load_policy" type="select">
+			<title xml:lang="ko">특수효과 설정</title>
+			<title xml:lang="jp">全画面表示の設定</title>
+			<title xml:lang="en">Effect Setting</title>
+			<description xml:lang="ko">비디오의 특수효과 표시를 설정할 수 있습니다.</description>
+			<description xml:lang="jp">ビデオの特殊効果の表示を設定することができます。</description>
+			<description xml:lang="en">Set the display of video effects.</description>
+			<options value="">
+				<title xml:lang="ko">기본값 사용</title>
+				<title xml:lang="jp">デフォルト値を使用</title>
+				<title xml:lang="en">Default</title>
+			</options>
+			<options value="3">
+				<title xml:lang="ko">표시 안함</title>
+				<title xml:lang="jp">表示しない</title>
+				<title xml:lang="en">Disable</title>
+			</options>
+		</var>
 		<var name="loop" type="select">
 			<title xml:lang="ko">반복재생 설정</title>
 			<title xml:lang="jp">loop設定</title>
