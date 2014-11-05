@@ -34,10 +34,15 @@
 				<title xml:lang="jp">使用しない</title>
 				<title xml:lang="en">Disable</title>
 			</options>
-			<options value="always">
-				<title xml:lang="ko">항상 사용</title>
-				<title xml:lang="jp">何時も使う</title>
-				<title xml:lang="en">Use always</title>
+			<options value="auto">
+				<title xml:lang="ko">화면 영역 넘길시 리사이즈</title>
+				<title xml:lang="jp">画面の領域を横切るときにリサイズ</title>
+				<title xml:lang="en">resize when overflow</title>
+			</options>
+			<options value="auto_forced">
+				<title xml:lang="ko">강제로 화면에 맞춤</title>
+				<title xml:lang="jp">強制的に画面に合わせる</title>
+				<title xml:lang="en">fit to screen</title>
 			</options>
 		</var>
 		<var name="resize_force">
