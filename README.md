@@ -12,5 +12,7 @@ xe-youtube-control-addon
 ## Release v1.2
 
 parameter에 mid_list 포함되는 버그수정 #2
+
 강제 리사이즈 기능 2종 추가 #1 #3
+
 반복재생, 전체화면, 특수효과 옵션 추가 #4
