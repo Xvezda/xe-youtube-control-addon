@@ -5,12 +5,12 @@ xe-youtube-control-addon
 옵션조절 이외에도 비디오 플레이어 자동 리사이즈등의 편의기능을 포함하고 있습니다.
 
 
-Release v1.0
+## Release v1.0
 
 릴리즈
 
-Release v1.2
+## Release v1.2
 
-parameter에 mid_list 포함되는 버그수정
-강제 리사이즈 기능 2종 추가
-반복재생, 전체화면, 특수효과 옵션 추가
+parameter에 mid_list 포함되는 버그수정 b8797949d98346ac5ee07ce3771f7d67317d6654
+강제 리사이즈 기능 2종 추가 390bb58c4c79ec98ee0da07a5a3a1b2617ca9083 5128381b06713207133ef2adbdcec28221209893
+반복재생, 전체화면, 특수효과 옵션 추가 5cfc91f10eafc521ce576b95ff570ae85fb1c953 d80f6cd465d585474987e69676b79634056f2250 61474b4090e602072c3f6e806cb2428e71d67adb
