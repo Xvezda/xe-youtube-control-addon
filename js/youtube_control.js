@@ -25,6 +25,8 @@
 				for(var q in youtube_option) {
 					youtube_src += (youtube_src.indexOf('?') == '-1') ? '?'+q+'='+youtube_option[q] : '&'+q+'='+youtube_option[q];
 				}
+				var video_id = youtube_src.replace(/(https?:)?\/\/www\.youtube\.com\/(embed|v)\/([A-Za-z0-9_-]{11})(\?(.*))?/,'$3');
+				if(youtube_option.loop) youtube_src += (youtube_src.indexOf('playlist') ==  '-1') ? '&playlist=' + video_id : '';
 				$(this).attr('src', youtube_src);
 			});
 		});
